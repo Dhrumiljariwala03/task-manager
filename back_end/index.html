@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .email-container {
+            max-width: 600px;
+            color: white;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.551);
+            background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.178)), url('/public/userimage/1736448075664.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333333;
+            color: #ffffff;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .content {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Your One Time Password</h1>
+        </div>
+        <div class="content">
+            <h3>{{OTP}}</h3>
+            <p>Never share your otp with anyone. Ensure that your otp is kept confidential and used only for its
+                intended purpose. Be cautious of phishing scams and always verify the source before entering your otp.
+                If you suspect any unusual activity, contact your service provider immediately.</p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
